@@ -10,9 +10,8 @@ function showOverlay2() {
 }
 
 function showOverlay3() {
-  document.getElementById('overlay2').classList.add('hidden');
-  document.getElementById('overlay4').classList.add('hidden');
-  document.getElementById('overlay3').classList.remove('hidden');
+  document.getElementById('overlay3').classList.add('hidden');
+  document.getElementById('overlay4').classList.remove('hidden');
   document.getElementById('main').classList.add('hidden');
 }
 
