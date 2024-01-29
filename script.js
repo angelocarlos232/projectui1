@@ -1,0 +1,47 @@
+function showOverlay1() {
+  document.getElementById('overlay2').classList.add('hidden');
+  document.getElementById('overlay1').classList.remove('hidden');
+}
+
+function showOverlay2() {
+  document.getElementById('overlay1').classList.add('hidden');
+  document.getElementById('overlay2').classList.remove('hidden');
+    document.getElementById('overlay3').classList.add('hidden');
+}
+
+function showOverlay3() {
+  document.getElementById('overlay2').classList.add('hidden');
+  document.getElementById('overlay3').classList.remove('hidden');
+  document.getElementById('main').classList.add('hidden');
+}
+
+function showMain() {
+  document.getElementById('overlay3').classList.add('hidden');
+  document.getElementById('main').classList.remove('hidden');
+}
+
+function takePhoto() {
+  // Implement the photo-taking logic here
+  // Show the preview and buttons
+  document.getElementById('photoPreview').classList.remove('hidden');
+  document.getElementById('retakeBtn').classList.remove('hidden');
+  document.getElementById('downloadBtn').classList.remove('hidden');
+}
+
+function retakePhoto() {
+  // Implement logic to reset photo preview
+  document.getElementById('photoPreview').classList.add('hidden');
+  document.getElementById('retakeBtn').classList.add('hidden');
+  document.getElementById('downloadBtn').classList.add('hidden');
+}
+
+function downloadPhoto() {
+  // Implement the download logic here
+  // Save data as JSON and download the photo
+}
+
+function returnToOverlay() {
+  document.getElementById('main').classList.add('hidden');
+  // Add logic to reset any necessary state or data
+  showOverlay3(); // Change this to the overlay you want to return to
+}
