@@ -48,17 +48,24 @@ function returnToOverlay() {
 
 
 function saveInputsToJson() {
-    const inputs = document.getElementById('mb-3');
-    const inputElements = inputs.querySelectorAll('input');
-    const inputsObj = {};
+  // Get user inputs
+  const userName = document.getElementById("userName").value.trim();
+  const age = document.getElementById("age").value;
+  const sex = document.getElementById("sex").value;
+  const height = document.getElementById("height").value;
+  const weight = document.getElementById("weight").value;
+  const conditions = Array.from(document.getElementsByName("conditions")).filter(checkbox => checkbox.checked).map(checkbox => checkbox.value);
 
-    inputElements.forEach(input => {
-        inputsObj[input.name] = input.value;
-    });
+  // Create JSON object
+  const userData = {
+    name: userName,
+    age: age,
+    sex: sex,
+    height: height,
+    weight: weight,
+    conditions: conditions
+  };
 
-    const json = JSON.stringify(inputsObj);
-    console.log(json);
-
-    // Save JSON to a file or send it to the server
-    // ...
+  // Save JSON object to local storage
+  localStorage.setItem("userData", JSON.stringify(userData));
 }
