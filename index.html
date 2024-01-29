@@ -195,7 +195,53 @@
         </div>
 
         <button type="button" class="btn btn-secondary me-2" onclick="showOverlay3()">Back</button>
-        <button type="button" class="btn btn-primary" onclick="showOverlay3()">Next</button>
+        <button type="button" class="btn btn-primary" onclick="showOverlay5()">Next</button>
+    </form>
+</div>
+
+	<div id="overlay5" class="overlay hidden">
+    <h2>Additional Information</h2>
+    <form id="additionalInfoFormPart2">
+        <div class="mb-3">
+            <p class="mb-2">Problem Areas:</p>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="weakChest" name="problemAreas" value="weakChest">
+                <label class="form-check-label" for="weakChest">Weak Chest</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="slimArms" name="problemAreas" value="slimArms">
+                <label class="form-check-label" for="slimArms">Slim Arms</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="beerBelly" name="problemAreas" value="beerBelly">
+                <label class="form-check-label" for="beerBelly">Beer Belly</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="slimLegs" name="problemAreas" value="slimLegs">
+                <label class="form-check-label" for="slimLegs">Slim Legs</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <p class="mb-2">Equipment Availability:</p>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="homeWorkout" name="equipmentAvailability" value="homeWorkout" required>
+                <label class="form-check-label" for="homeWorkout">Home Workout (None/Limited)</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="gym" name="equipmentAvailability" value="gym">
+                <label class="form-check-label" for="gym">Gym</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-secondary me-2" onclick="showOverlay4()">Back</button>
+        <button type="button" class="btn btn-primary" onclick="showOverlay5()">Next</button>
     </form>
 </div>
 	
