@@ -6,7 +6,6 @@ function showOverlay1() {
 function showOverlay2() {
   document.getElementById('overlay1').classList.add('hidden');
   document.getElementById('overlay2').classList.remove('hidden');
-  document.getElementById('overlay3').classList.add('hidden');  // Change this line to show overlay3
 }
 
 function showOverlay3() {
