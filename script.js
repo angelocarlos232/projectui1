@@ -6,21 +6,34 @@ function showOverlay1() {
 function showOverlay2() {
   document.getElementById('overlay1').classList.add('hidden');
   document.getElementById('overlay2').classList.remove('hidden');
-    document.getElementById('overlay3').classList.add('hidden');
+  document.getElementById('overlay3').classList.add('hidden');
 }
 
 function showOverlay3() {
   document.getElementById('overlay2').classList.add('hidden');
-  document.getElementById('overlay4').classList.add('hidden'); // hide overlay4
-  document.getElementById('overlay3').classList.remove('hidden'); // show overlay3
+  document.getElementById('overlay4').classList.add('hidden');
+  document.getElementById('overlay3').classList.remove('hidden');
   document.getElementById('main').classList.add('hidden');
 }
-
 
 function showMain() {
   document.getElementById('overlay3').classList.add('hidden');
   document.getElementById('main').classList.remove('hidden');
 }
+
+function showOverlay4() {
+  document.getElementById('overlay3').classList.add('hidden');
+  document.getElementById('overlay4').classList.remove('hidden');
+}
+
+function showOverlay5() {
+  document.getElementById('overlay4').classList.add('hidden');
+  document.getElementById('overlay5').classList.remove('hidden');
+}
+
+// Other functions...
+
+
 
 function takePhoto() {
   // Implement the photo-taking logic here
@@ -48,15 +61,6 @@ function returnToOverlay() {
   showOverlay3(); // Change this to the overlay you want to return to
 }
 
-function showOverlay4() {
-  document.getElementById('overlay3').classList.add('hidden');
-  document.getElementById('overlay4').classList.remove('hidden');
-}
-
-function showOverlay5() {
-  document.getElementById('overlay4').classList.add('hidden');
-  document.getElementById('overlay5').classList.remove('hidden');
-}
 
 
 function saveInputsToJson() {
