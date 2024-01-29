@@ -46,20 +46,19 @@ function returnToOverlay() {
   showOverlay3(); // Change this to the overlay you want to return to
 }
 
-<script>
-        function saveInputsToJson() {
-            const inputs = document.getElementById('mb-3');
-            const inputElements = inputs.querySelectorAll('input');
-            const inputsObj = {};
 
-            inputElements.forEach(input => {
-                inputsObj[input.name] = input.value;
-            });
+function saveInputsToJson() {
+    const inputs = document.getElementById('mb-3');
+    const inputElements = inputs.querySelectorAll('input');
+    const inputsObj = {};
 
-            const json = JSON.stringify(inputsObj);
-            console.log(json);
+    inputElements.forEach(input => {
+        inputsObj[input.name] = input.value;
+    });
 
-            // Save JSON to a file or send it to the server
-            // ...
-        }
-    </script>
+    const json = JSON.stringify(inputsObj);
+    console.log(json);
+
+    // Save JSON to a file or send it to the server
+    // ...
+}
