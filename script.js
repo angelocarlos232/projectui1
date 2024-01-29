@@ -55,7 +55,7 @@ function saveInputsToJson() {
   const height = document.getElementById("height").value;
   const weight = document.getElementById("weight").value;
   const conditions = Array.from(document.getElementsByName("conditions")).filter(checkbox => checkbox.checked).map(checkbox => checkbox.value);
-
+  
   // Create JSON object
   const userData = {
     name: userName,
@@ -67,5 +67,7 @@ function saveInputsToJson() {
   };
 
   // Save JSON object to local storage
+  
   localStorage.setItem("userData", JSON.stringify(userData));
+  console.log("User Data:", userData);
 }
