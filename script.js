@@ -6,7 +6,7 @@ function showOverlay1() {
 function showOverlay2() {
   document.getElementById('overlay1').classList.add('hidden');
   document.getElementById('overlay2').classList.remove('hidden');
-  document.getElementById('overlay3').classList.add('hidden');
+  document.getElementById('overlay3').classList.add('hidden');  // Change this line to show overlay3
 }
 
 function showOverlay3() {
@@ -16,9 +16,9 @@ function showOverlay3() {
 }
 
 function showOverlay4() {
-        document.getElementById('overlay3').classList.add('hidden');
-        document.getElementById('overlay4').classList.remove('hidden');
-    }
+  document.getElementById('overlay4').classList.add('hidden');
+  document.getElementById('overlay3').classList.remove('hidden');
+}
 
     function showOverlay5() {
         document.getElementById('overlay4').classList.add('hidden');
