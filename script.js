@@ -29,7 +29,6 @@ function showOverlay4() {
         document.getElementById('overlay2').classList.add('hidden');
         document.getElementById('main').classList.remove('hidden');
     }
-</script>
 
 // Other functions...
 
