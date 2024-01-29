@@ -107,7 +107,10 @@
     </div>
 
 <div id="main" class="hidden text-center">
-    <div id="cameraPlaceholder" class="bg-light mb-4 mx-auto" style="width: 300px; height: 300px;"></div>
+    <div id="cameraPlaceholder">
+        <video id="webcam-video" autoplay playsinline></video>
+        <img id="overlay-image" src="asd.svg" alt="Overlay Image">
+    </div>
     <div>
       <button class="btn btn-secondary me-2" onclick="returnToOverlay()">Return</button>
       <button class="btn btn-primary" onclick="takePhoto(); saveInputsToJson();">Take Photo</button>
