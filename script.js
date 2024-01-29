@@ -15,20 +15,21 @@ function showOverlay3() {
   document.getElementById('main').classList.add('hidden');
 }
 
-function showMain() {
-  document.getElementById('overlay3').classList.add('hidden');
-  document.getElementById('main').classList.remove('hidden');
-}
-
 function showOverlay4() {
-  document.getElementById('overlay3').classList.add('hidden');
-  document.getElementById('overlay4').classList.remove('hidden');
-}
+        document.getElementById('overlay3').classList.add('hidden');
+        document.getElementById('overlay4').classList.remove('hidden');
+    }
 
-function showOverlay5() {
-  document.getElementById('overlay4').classList.add('hidden');
-  document.getElementById('overlay5').classList.remove('hidden');
-}
+    function showOverlay5() {
+        document.getElementById('overlay4').classList.add('hidden');
+        document.getElementById('overlay5').classList.remove('hidden');
+    }
+
+    function showMain() {
+        document.getElementById('overlay2').classList.add('hidden');
+        document.getElementById('main').classList.remove('hidden');
+    }
+</script>
 
 // Other functions...
 
