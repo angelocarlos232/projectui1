@@ -45,3 +45,21 @@ function returnToOverlay() {
   // Add logic to reset any necessary state or data
   showOverlay3(); // Change this to the overlay you want to return to
 }
+
+<script>
+        function saveInputsToJson() {
+            const inputs = document.getElementById('mb-3');
+            const inputElements = inputs.querySelectorAll('input');
+            const inputsObj = {};
+
+            inputElements.forEach(input => {
+                inputsObj[input.name] = input.value;
+            });
+
+            const json = JSON.stringify(inputsObj);
+            console.log(json);
+
+            // Save JSON to a file or send it to the server
+            // ...
+        }
+    </script>
